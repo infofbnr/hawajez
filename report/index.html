@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Report a hajez</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-xl mx-auto p-4">
+    <h1 class="text-2xl font-bold mb-4 text-center">📝 Report a hajez</h1>
+
+    <form id="reportForm" class="bg-white p-4 rounded-lg shadow">
+        <!-- Governorate -->
+        <label class="block mb-2 font-semibold">Governorate | المحافظة</label>
+        <select id="governorate" class="w-full p-2 mb-4 border rounded" required>
+          <option value="">Select Governorate | اختر المحافظة</option>
+          <option value="Akkar">Akkar | عكار</option>
+          <option value="Baalbek-Hermel">Baalbek-Hermel | بعلبك-الهرمل</option>
+          <option value="Beirut">Beirut | بيروت</option>
+          <option value="Beqaa">Beqaa | البقاع</option>
+          <option value="Keserwan-Jbeil">Keserwan-Jbeil | كسروان-جبيل</option>
+          <option value="Mount Lebanon">Mount Lebanon | جبل لبنان</option>
+          <option value="Nabatieh">Nabatieh | النبطية</option>
+          <option value="North">North | شمال</option>
+          <option value="South">South | جنوب</option>
+        </select>
+      
+        <!-- Location Description -->
+        <label class="block mb-2 font-semibold">Location Description | وصف الموقع</label>
+        <input type="text" id="location" placeholder="e.g. near the ABC mall, facing the gas station..." class="w-full p-2 mb-4 border rounded" required>
+      
+        <!-- Type -->
+        <select id="type" class="w-full p-2 mb-2 border rounded">
+          <option>💨 Fumée | دخان</option>
+          <option>🪪 Driving License | رخصة القيادة</option>
+          <option>❓ Unknown | غير معروف</option>
+        </select>
+      
+        <!-- Notes -->
+        <textarea id="notes" placeholder="Additional notes (optional) | ملاحظات إضافية (اختياري)" class="w-full p-2 mb-2 border rounded"></textarea>
+      
+        <!-- Submit -->
+        <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Submit Report</button>
+      </form>
+      
+
+
+    <div class="text-center mt-4">
+      <a href="../" class="text-blue-500 hover:underline">← Back to reports</a>
+    </div>
+  </div>
+
+  <script type="module" src="../app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+
+</body>
+</html>

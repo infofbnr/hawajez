@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hawajez in Lebanon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-xl mx-auto p-4">
+    <h1 class="text-3xl font-bold mb-4 text-center">🚧 Hawajez in Lebanon</h1>
+
+    <!-- Introduction -->
+    <div class="mb-6">
+      <p class="text-lg p-4 bg-white rounded-lg shadow">
+        "Hawajez" (حواجز) refer to roadblocks or checkpoints that are set up by security forces, political groups, or protestors in various parts of Lebanon. These roadblocks can cause traffic disruptions, delays, and even safety concerns for motorists. They are often set up to control the movement of people or vehicles, either as part of a protest, security measure, or law enforcement.
+      </p>
+      <p class="text-lg mt-4 p-4 bg-red-400 text-white rounded-lg shadow">
+        It's important for both residents and travelers to stay informed about these hawajez to avoid long delays or unexpected obstacles. If you encounter a hajz or witness one being set up, you can report it here and help others stay updated.
+      </p>
+    </div>
+
+    <!-- Report Button -->
+    <div class="text-center mb-4">
+      <a href="/report/" class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Report a 7ajz</a>
+    </div>
+
+    <!-- Search -->
+    <div class="mb-4">
+      <input type="text" id="searchInput" placeholder="Search location..." class="w-full p-2 border rounded" />
+    </div>
+
+
+    <!-- Reports List -->
+    <div id="reportsList" class="space-y-4"></div>
+
+    <!-- Info Section -->
+    <div class="mt-6 text-center text-sm text-gray-600">
+      <p>
+        This service is intended to help people stay informed about roadblocks and hawajez in Lebanon. Your reports can assist others in avoiding delays and navigating the roads more efficiently.
+      </p>
+      <p class="mt-2">
+        Please make sure that your reports are accurate and up-to-date. If you notice a roadblock that has been cleared or moved, don't hesitate to update your report.
+      </p>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+</body>
+</html>
